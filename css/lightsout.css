@@ -1,0 +1,83 @@
+#lightsout * {
+    box-sizing: border-box;
+}
+
+#lightsout {
+    width: 10em;
+    margin: auto;
+}
+
+#lightsout-timer {
+    width: 3em;
+
+    font-size: 2em;
+    text-align: center;
+
+    margin: auto;
+}
+
+#lightsout-board {
+    font-size: 2em;
+
+    width: 5em;
+    height: 5em;
+
+    display: grid;
+    grid-template-columns: repeat(5, 1em);
+
+    background-color: rgb(90, 90, 90);
+
+    margin: auto;
+    margin-bottom: 20px;
+    border: 1px solid black;
+}
+
+.lightsout-square {
+    width: 1em;
+    height: 1em;
+
+    grid-row-start: auto;
+    grid-column-start: auto;
+
+
+    border: 1px solid black;
+}
+
+.js-lightsout-square-on {
+    background-color: white;
+}
+
+#lightsout-newgame-btn {
+    display: block;
+
+    margin: auto;
+    margin-bottom: 20px;
+    padding-top: 0.3em;
+}
+
+
+
+
+#overlay {
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    z-index:1000;
+    background-color: rgba(0, 0, 0, 0.5);
+    opacity:0;
+    display:none;
+}
+#container {
+    position:absolute;
+    top:30%;
+    left:50%;
+    margin-left:-200px;
+    width: 400px;
+    height:250px;
+    background-color:#111;
+    padding:5px;
+    border-radius:4px;
+    color:#FFF;
+}

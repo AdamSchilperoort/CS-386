@@ -1,0 +1,415 @@
+<!--Developed by Adam Schilperoort https://www.adamschilperoort.com -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+
+  <title>MediaPlayer</title>
+
+    <link rel="icon" href="img/welcome/asdf.png">
+
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=0">
+    <meta name="description" content="">
+    <meta name="keywords" content="as3324 nau cs212">
+    <meta name="author" content="Adam Schilperoort | professional programmer and website developer">
+    <!-- <meta name="google-site-verification" content="02d0b66dbb181201"> -->
+
+    <!-- Bootstrap Css -->
+    <link href="bootstrap-assets/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Style -->
+    <link href="plugins/owl-carousel/owl.carousel.css" rel="stylesheet">
+    <link href="plugins/owl-carousel/owl.theme.css" rel="stylesheet">
+    <link href="plugins/owl-carousel/owl.transitions.css" rel="stylesheet">
+    <link href="plugins/Lightbox/dist/css/lightbox.css" rel="stylesheet">
+    <link href="plugins/Icons/et-line-font/style.css" rel="stylesheet">
+    <link href="plugins/animate.css/animate.css" rel="stylesheet">
+    <link href="css/main.css" rel="stylesheet">
+
+    <!-- Icons Font -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+
+</head>
+
+<body width = "device-width">
+
+    <!-- Preloader
+	============================================= -->
+    <div class="preloader"><i class="fa fa-circle-o-notch fa-spin fa-2x"></i></div>
+    <!-- Header
+	============================================= -->
+   <section class="main-header">
+       <nav class="navbar navbar-default navbar-fixed-top">
+           <div class="container">
+               <div class="navbar-header">
+                   <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                       <span class="sr-only">Toggle navigation</span>
+                       <span class="icon-bar"></span>
+                       <span class="icon-bar"></span>
+                       <span class="icon-bar"></span>
+                   </button>
+                 <div class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                      <input type="text" placeholder="Search..">
+                 </div>
+
+                   <!-- <a class="navbar-brand" href="#"><img src="img/logo/evensmaller.png" class="img-responsive" alt="logo"></a> -->
+               </div>
+               <div class="collapse navbar-collapse text-center" id="bs-example-navbar-collapse-1">
+                   <div class="col-md-4 col-xs-4 nav-wrap">
+                       <ul class="nav navbar-nav">
+                             <li><a href="index.html" class="page-scroll">Home</a></li>
+                             <li><a href="Playlists.html" class="page-scroll">Playlists</a></li>
+                             <li><a href="Profile.html" class="page-scroll">Profile</a><li>
+                       </ul>
+                   </div>
+                   <div class="social-media hidden-xs">
+                        <form class ="search" action="/action_page.php">
+                             <input type="text" placeholder="Search.." name="search2">
+                             <button id="searchButton" type="submit"><i class="fa fa-searchZ"></i></button>
+                       </form>
+                   </div>
+               </div>
+           </div>
+
+       </nav>
+       <div id="owl-hero" class="owl-carousel owl-theme">
+
+   </section>
+
+    <!-- Welcome
+	============================================= -->
+    <section id="welcome">
+        <div class="container">
+            <h2><span></span></h2>
+            <hr class="sep">
+            <p>
+            </p>
+            <center>
+                      <div>
+                        <img class="img-responsive margin-left wow fadeInUp" data-wow-delay=".3s" src="img/welcome/Image1.jpeg" alt="logo" style="width:100%;max-width:600px">
+                      </div>
+            </center>
+        </div>
+
+    </section>
+
+    <!-- Services
+	============================================= -->
+    <!-- <section id="services">
+        <div class="container">
+            <h2>What We Do</h2>
+            <hr class="light-sep">
+            <p>We Can Do Crazy Things</p>
+            <div class="services-box">
+                <div class="row wow fadeInUp" data-wow-delay=".3s">
+                    <div class="col-md-4">
+                        <div class="media-left"><span class="icon-lightbulb"></span></div>
+                        <div class="media-body">
+                            <h3>Creative Design</h3>
+                            <p>Fringilla augue at maximus vestibulum. Nam pulvinar vitae neque et porttitor. Praesent sed nisi eleifend.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="media-left"><span class="icon-mobile"></span></div>
+                        <div class="media-body">
+                            <h3>Bootstrap</h3>
+                            <p>Fringilla augue at maximus vestibulum. Nam pulvinar vitae neque et porttitor. Praesent sed nisi eleifend.</p>
+                        </div>
+
+                    </div>
+                    <div class="col-md-4">
+                        <div class="media-left"><span class="icon-compass"></span></div>
+                        <div class="media-body">
+                            <h3>Sass &amp; Compass</h3>
+                            <p>Fringilla augue at maximus vestibulum. Nam pulvinar vitae neque et porttitor. Praesent sed nisi eleifend.</p>
+                        </div>
+
+                    </div>
+
+                    <div class="row wow fadeInUp" data-wow-delay=".6s">
+                        <div class="col-md-4">
+                            <div class="media-left"><span class="icon-adjustments"></span></div>
+                            <div class="media-body">
+                                <h3>Easy To Customize</h3>
+                                <p>Fringilla augue at maximus vestibulum. Nam pulvinar vitae neque et porttitor. Praesent sed nisi eleifend.</p>
+                            </div>
+
+                        </div>
+                        <div class="col-md-4">
+                            <div class="media-left"><span class="icon-tools"></span></div>
+                            <div class="media-body">
+                                <h3>Photoshop</h3>
+                                <p>Fringilla augue at maximus vestibulum. Nam pulvinar vitae neque et porttitor. Praesent sed nisi eleifend.</p>
+                            </div>
+
+                        </div>
+                        <div class="col-md-4">
+                            <div class="media-left"><span class="icon-wallet"></span></div>
+                            <div class="media-body">
+                                <h3>Money Saver</h3>
+                                <p>Fringilla augue at maximus vestibulum. Nam pulvinar vitae neque et porttitor. Praesent sed nisi eleifend.</p>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>  -->
+
+    <!-- Portfolio
+	============================================= -->
+    <!--  <section id="portfolio">
+        <div class="container-fluid">
+            <h2>Our Work</h2>
+            <hr class="sep">
+            <p>Showcase Your Amazing Work With Us</p>
+            <div class="row">
+                <div class="col-lg-4 col-sm-6 wow fadeInUp" data-wow-delay=".3s">
+                    <a class="portfolio-box" href="img/portfolio/1.jpg" data-lightbox="image-1" data-title="Your caption">
+                        <img src="img/portfolio/1.jpg" class="img-responsive" alt="1">
+                        <div class="portfolio-box-caption">
+                            <div class="portfolio-box-caption-content">
+                                <div class="project-category text-faded">
+                                    Category
+                                </div>
+                                <div class="project-name">
+                                    Project Name
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-4 col-sm-6 wow fadeInUp" data-wow-delay=".3s">
+                    <a href="img/portfolio/2.jpg" class="portfolio-box" data-lightbox="image-2" data-title="Your caption">
+                        <img src="img/portfolio/2.jpg" class="img-responsive" alt="2">
+                        <div class="portfolio-box-caption">
+                            <div class="portfolio-box-caption-content">
+                                <div class="project-category text-faded">
+                                    Category
+                                </div>
+                                <div class="project-name">
+                                    Project Name
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-4 col-sm-6 wow fadeInUp" data-wow-delay=".3s">
+                    <a href="img/portfolio/3.jpg" class="portfolio-box" data-lightbox="image-3" data-title="Your caption">
+                        <img src="img/portfolio/3.jpg" class="img-responsive" alt="3">
+                        <div class="portfolio-box-caption">
+                            <div class="portfolio-box-caption-content">
+                                <div class="project-category text-faded">
+                                    Category
+                                </div>
+                                <div class="project-name">
+                                    Project Name
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-4 col-sm-6 wow fadeInUp" data-wow-delay=".3s">
+                    <a href="img/portfolio/4.jpg" class="portfolio-box" data-lightbox="image-4" data-title="Your caption">
+                        <img src="img/portfolio/4.jpg" class="img-responsive" alt="4">
+                        <div class="portfolio-box-caption">
+                            <div class="portfolio-box-caption-content">
+                                <div class="project-category text-faded">
+                                    Category
+                                </div>
+                                <div class="project-name">
+                                    Project Name
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-4 col-sm-6 wow fadeInUp" data-wow-delay=".3s">
+                    <a href="img/portfolio/5.jpg" class="portfolio-box" data-lightbox="image-5" data-title="Your caption">
+                        <img src="img/portfolio/5.jpg" class="img-responsive" alt="5">
+                        <div class="portfolio-box-caption">
+                            <div class="portfolio-box-caption-content">
+                                <div class="project-category text-faded">
+                                    Category
+                                </div>
+                                <div class="project-name">
+                                    Project Name
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-4 col-sm-6 wow fadeInUp" data-wow-delay=".3s">
+                    <a href="img/portfolio/6.jpg" class="portfolio-box" data-lightbox="image-6" data-title="Your caption">
+                        <img src="img/portfolio/6.jpg" class="img-responsive" alt="6">
+                        <div class="portfolio-box-caption">
+                            <div class="portfolio-box-caption-content">
+                                <div class="project-category text-faded">
+                                    Category
+                                </div>
+                                <div class="project-name">
+                                    Project Name
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section> -->
+    <!-- Work Process
+	============================================= -->
+    <!-- <section id="work-process">
+        <div class="container">
+            <h2>Work Process</h2>
+            <hr class="sep">
+            <p>What Happen In The Background</p>
+            <div class="row wow fadeInUp" data-wow-delay=".3s">
+                <div class="col-lg-3">
+                    <span class="icon-chat"></span>
+                    <h4>1.Discuss</h4>
+                </div>
+                <div class="col-lg-3">
+                    <span class="icon-circle-compass"></span>
+                    <h4>2.Sketch</h4>
+                </div>
+                <div class="col-lg-3">
+                    <span class="icon-browser"></span>
+                    <h4>3.Make</h4>
+                </div>
+                <div class="col-lg-3">
+                    <span class="icon-global"></span>
+                    <h4>4.Publish</h4>
+                </div>
+            </div>
+        </div>
+    </section> -->
+    <!-- Some Fun Facts
+	=============================================
+    <section id="fun-facts">
+        <div class="container">
+            <h2>Fun Facts about me! </h2>
+            <hr class="light-sep">
+            <p></p>
+            <div class="row wow fadeInUp" data-wow-delay=".3s">
+                <div class="col-lg-3">
+                    <span class="icon-happy"></span>
+                    <h2>3</h2>
+                    <h4>Changes of major!</h4>
+                </div>
+                <div class="col-lg-3">
+                    <span class="icon-wine"></span>
+                    <h2>4</h2>
+                    <h4>Different colleges!</h4>
+                </div>
+
+                <div class="col-lg-3">
+                    <span class="icon-documents"></span>
+                    <h2>0</h2>
+                    <h4>Degrees!</h4>
+                </div>
+                <div class="col-lg-3">
+                    <span class="icon-trophy"></span>
+                    <h2 class="number timer">1</h2>
+                    <h4>People Impacted</h4>
+                </div>
+            </div>
+        </div>
+    </section>
+     Some Fune Facts
+	============================================= -->
+
+  <!--  TEAM
+    <section id="team">
+        <div class="container">
+            <h2>Executive Officers & Advisory Board</h2>
+            <hr class="sep">
+            <div class="row wow fadeInUp" data-wow-delay=".5s">
+                <div class="col-md-4 col-lg-12">
+                    <div class="team">
+                        <img class="img-responsive center-block" src="img/team/ChulKwon.jpg" alt="2">
+                        <h4>Adam Schilperoort</h4>
+                        <p>Chief Technology Officer</p>
+                        <p> Flagstaff, Az </p>
+                        <div class="team-social-icons">
+                            <a href="h"><i class="fa fa-facebook"></i></a>
+                            <a href="https://github.com/adamschilperoort><i class="fa fa-github"></i></a>
+                            <a href="https://www.linkedin.com/in/adamschilperoort"><i class="fa fa-linkedin"></i></a>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-md-4 col-lg-12">
+                  -->
+
+<!-- space for more profiles -->
+                </div>
+    </section>
+    <!-- Testimonials
+	============================================= -->
+    <!--<section id="testimonials">
+        <div class="container">
+            <h2>Testimonials</h2>
+            <hr class="light-sep">
+            <p>What Favour Wrote About You</p>
+            <div id="owl-testi" class="owl-carousel owl-theme">
+                <div class="item">
+                    <div class="quote">
+                        <i class="fa fa-quote-left left fa-2x"></i>
+                        <h5> Blah Blah Blah <span>Rise</span>.<i class="fa fa-quote-right right fa-2x"></i></h5>
+
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="quote">
+                        <i class="fa fa-quote-left left fa-2x"></i>
+                        <h5>I am amazed, I should say thank you so much for your awesome template. Design is so
+good and neat, every detail has been taken care these team are realy amazing and talented! I will
+work only with <span>Rise</span>.<i class="fa fa-quote-right right fa-2x"></i></h5>
+
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="quote">
+                        <i class="fa fa-quote-left left fa-2x"></i>
+                        <h5>I am amazed, I should say thank you so much for your awesome template. Design is so
+good and neat, every detail has been taken care these team are realy amazing and talented! I will
+work only with <span>Rise</span>.<i class="fa fa-quote-right right fa-2x"></i></h5>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section> -->
+    <!-- Contact Us
+	============================================= -->
+
+    <!-- Google Map
+	============================================= -->
+    <!-- <div id="map"></div> -->
+    <!-- Footer
+	============================================= -->
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="bootstrap-assets/js/bootstrap.min.js"></script>
+    <script src="js/custom.js"></script>
+    <!-- JS PLUGINS -->
+    <script src="plugins/owl-carousel/owl.carousel.min.js"></script>
+    <script src="js/jquery.easing.min.js"></script>
+    <script src="plugins/waypoints/jquery.waypoints.min.js"></script>
+    <script src="plugins/countTo/jquery.countTo.js"></script>
+    <script src="plugins/inview/jquery.inview.min.js"></script>
+    <script src="plugins/Lightbox/dist/js/lightbox.min.js"></script>
+    <script src="plugins/WOW/dist/wow.min.js"></script>
+    <!-- GOOGLE MAP -->
+    <!-- AIzaSyDbi84W3b2-Gqi6SI1bRLFWzsvQfvXGIIQ GOOGLE API KEY -->
+    <script src="https://maps.googleapis.com/maps/api/js"></script>
+</body>
+
+</html>

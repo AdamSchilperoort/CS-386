@@ -1,0 +1,99 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,300,700);
+
+/* ==========================================================================
+Global Styles
+========================================================================== */
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    color: #abb2bf;
+    overflow-x: hidden;
+    white-space: nowrap;
+    background-color: #282c34;
+}
+
+/* ==========================================================================
+Typography
+========================================================================== */
+
+h1 {
+    font-size: 60px;
+    color: #c7ccd6;
+    font-weight: 400;
+    letter-spacing: 0.13em;
+    margin-left:9px;
+}
+
+h2 {
+    text-align: left;
+    margin-left: 5px;
+    font-size: 28px;
+    color: #e06c75;
+    font-weight: 500;
+    letter-spacing: 0.04em;
+    border-bottom: 2.5px #263d5a solid;
+}
+h3 {
+    font-size: 20px;
+    margin-left: 35px;
+    color: #d19a66;
+    font-weight: 400;
+}
+h4 {
+    font-size: 24px;
+    color: #abb2bf;
+    font-weight: 400;
+}
+
+p {
+    margin: 8px;
+    text-indent: 0px;
+    text-align: left;
+    font-size: 16px;
+    color: #abb2bf;
+    font-weight: 400;
+    white-space: pre-wrap;      /* CSS3 */
+    white-space: -moz-pre-wrap; /* Firefox */
+    white-space: -pre-wrap;     /* Opera <7 */
+    white-space: -o-pre-wrap;   /* Opera 7 */
+    word-wrap: break-word;      /* IE */
+}
+
+/* ==========================================================================
+Link Styles
+========================================================================== */
+
+/* unvisited link */
+a:link {
+    color: #abb2bf;
+}
+/* visited link */
+a:visited {
+    color: green;
+}
+/* mouse over link */
+a:hover {
+    color: #61afe9;
+}
+
+/* ==========================================================================
+Lists & Table Style
+========================================================================== */
+
+/* unordered list */
+ul {
+  margin-left: 5px;
+}
+/* table */
+table {
+  margin-left: 15px;
+}
+
+/* ==========================================================================
+Banner Style
+========================================================================== */
+
+#banner {
+    background-color: #263d5a;
+}
