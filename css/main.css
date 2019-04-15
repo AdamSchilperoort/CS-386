@@ -62,6 +62,12 @@ h6 {
     font-weight: 400;
     letter-spacing: 0.05em;
 }
+h7 {
+    font-size: 14px;
+    color: #000;
+    font-weight: 300;
+    letter-spacing: 0;
+}
 p {
     margin: 8px;
     text-indent: 0px;
@@ -74,6 +80,21 @@ p {
     white-space: -pre-wrap;     /* Opera <7 */
     white-space: -o-pre-wrap;   /* Opera 7 */
     word-wrap: break-word;      /* IE */
+}
+onhover
+{
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 400;
+    color: transparent;
+}
+
+onhover:hover
+{
+    color: black;
 }
 
 @media (min-width:450px) {
@@ -219,12 +240,13 @@ Navigation Style
     padding-right: 15px;
 }
 .navbar-default .nav-wrap {
-    width: 70%;
+    width: auto;
 }
 .navbar-default .nav > li > a {
-    font-size: 18px;
+    font-size: 16px;
     color: #fff;
-    font-weight: 600;
+    font-weight: 700;
+    letter-spacing: -.2px;
     padding: 24px 12px;
     -moz-transition: all 0.3s ease-in-out;
     -o-transition: all 0.3s ease-in-out;
@@ -241,7 +263,6 @@ Navigation Style
     margin-top: inherit;
     margin-right: inherit;
     font-size: inherit;
-
 }
 .navbar-default .social-media .search{
       margin-top: 20px;
@@ -272,8 +293,16 @@ Navigation Style
     height: 52px;
 }
 .top-nav-collapse .nav > li > a {
-    font-size: 16px;
+    font-size: 14px;
     padding: 16px 8px;
+}
+.top-nav-collapse .social-media .search {
+    font-size: 12px;
+    margin-top: 15px;
+    -moz-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
 }
 .top-nav-collapse .social-media i {
     font-size: 16px;
@@ -876,10 +905,22 @@ Media Queries Style
   .navbar-default .nav-wrap {
       width: 100%;
   }
+  .navbar-default .login {
+      width: 100%;
+      margin-top: 0px;
+      margin-right: 0px;
+  }
   .navbar-default .navbar-toggle {
-      padding-top: 10px;
-      padding-bottom: 10px;
+      padding-top: 5px;
+      padding-bottom: 5px;
       border: none;
+  }
+  .navbar-default .navbar-toggle .searchbar{
+      font-size: 12px;
+      padding-top: 1px;
+      margin-bottom: 0px;
+      margin-top: 0px;
+      padding-bottom: 1px;
   }
   .navbar-default .navbar-toggle .icon-bar {
       background-color: #fff;
@@ -895,6 +936,9 @@ Media Queries Style
   }
   .navbar-default .navbar-toggle {
       display: block;
+  }
+  .navbar-default .navbar-toggle .search{
+      font-size: 10px;
   }
   .navbar-default .navbar-collapse {
       box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.1);
