@@ -17,6 +17,10 @@
     <meta name="author" content="Adam Schilperoort | professional programmer and website developer">
     <!-- <meta name="google-site-verification" content="02d0b66dbb181201"> -->
 
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
     <!-- Bootstrap Css -->
     <link href="bootstrap-assets/css/bootstrap.min.css" rel="stylesheet">
 
@@ -51,8 +55,8 @@
                        <span class="icon-bar"></span>
                        <span class="icon-bar"></span>
                    </button>
-                 <div class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-                      <input type="text" placeholder="Search..">
+                 <div class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-2" aria-expanded="false">
+                      <input class="searchbar" type="text" placeholder="Search">
                  </div>
 
                    <!-- <a class="navbar-brand" href="#"><img src="img/logo/evensmaller.png" class="img-responsive" alt="logo"></a> -->
@@ -60,15 +64,15 @@
                <div class="collapse navbar-collapse text-center" id="bs-example-navbar-collapse-1">
                    <div class="col-md-4 col-xs-4 nav-wrap">
                        <ul class="nav navbar-nav">
-                             <li><a href="index.html" class="page-scroll">Home</a></li>
-                             <li><a href="Playlists.html" class="page-scroll">Playlists</a></li>
-                             <li><a href="Profile.html" class="page-scroll">Profile</a><li>
+                             <li><a href="index.html" class="page-scroll"> <span class="glyphicon glyphicon-home"></span> Home </a></li>
+                             <li><a href="Playlists.html" class="page-scroll"><span class="glyphicon glyphicon-th-list"></span> Library </a></li>
+                             <li><a href="Profile.html" class="page-scroll"><span class="glyphicon glyphicon-user"></span> Profile </a></li>
                        </ul>
                    </div>
                    <div class="social-media hidden-xs">
                         <form class ="search" action="/action_page.php">
-                             <input type="text" placeholder="Search.." name="search2">
-                             <button id="searchButton" type="submit"><i class="fa fa-searchZ"></i></button>
+                             <input type="text" placeholder="Search" name="search2">
+                             <button id="searchButton" type="submit"><i class="fa fa-search"></i></button>
                        </form>
                    </div>
                </div>
@@ -83,14 +87,40 @@
 	============================================= -->
     <section id="welcome">
         <div class="container">
-            <h2><span></span></h2>
+            <br></br>
+            <h5><span>Suggested Track:</span></h5>
             <hr class="sep">
-            <p>
-            </p>
+
+<!--
+
+                      <p id = spotifyTrack>
+                      </p>
+
+          <script>
+                var iframe= document.createElement('iframe');
+                iframe.src= 'https://open.spotify.com/embed/track/11IzgLRXV7Cgek3tEgGgjw';
+                iframe.width=iframe.height= 300;
+                iframe.frameborder=0;
+                iframe.allowtransparency= true;
+                iframe.allow= encrypted-media;
+                document.getElementById('spotifyTrack').appendChild(iframe);
+
+             // var trackID = 11IzgLRXV7Cgek3tEgGgjw
+
+            //  document.write(' <iframe id="spotifyTrack" src="https://open.spotify.com/embed/track/11IzgLRXV7Cgek3tEgGgjw" width="300" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>');
+
+          </script>
+-->
+
+           <iframe id="spotifyTrack" src="https://open.spotify.com/embed/track/11IzgLRXV7Cgek3tEgGgjw" width="300" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+             
+
+
             <center>
-                      <div>
+                   <!-- <div>
                         <img class="img-responsive margin-left wow fadeInUp" data-wow-delay=".3s" src="img/welcome/Image1.jpeg" alt="logo" style="width:100%;max-width:600px">
                       </div>
+                    -->
             </center>
         </div>
 
